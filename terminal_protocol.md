@@ -427,11 +427,8 @@ HTTP/1.1 200 OK
 ```json5
 {
   is_call_bank_soft: true,
-  //boolean
   is_print_second_bank_check: true,
-  //boolean
   is_combined_bank_check: true
-  //boolean
 }
 ```
 
@@ -450,11 +447,8 @@ HTTP/1.1 201 Created
 ```json5
 {
   is_call_bank_soft: true,
-  //boolean
   is_print_second_bank_check: false,
-  //boolean
   is_combined_bank_check: false
-  //boolean
 }
 ```
 
@@ -494,11 +488,8 @@ HTTP/1.1 200 OK
 ```json5
 {
   is_call_bank_soft: false,
-  //boolean,
   is_print_second_bank_check: false,
-  //boolean,
   is_combined_bank_check: false,
-  //boolean
 }
 ```
 
@@ -542,7 +533,6 @@ HTTP/1.1 200 OK
 ```json5
 {
   amount: "string(F)"
-  /* "300.00" */,
 }
 ```
 
@@ -641,9 +631,8 @@ HTTP/1.1 201 Created
 
 ```json5
 {
-  amount: "string(F)"
-  /* "300.00" */,
-  transaction_rrn: "string",
+  amount: "string(F)",
+  transaction_rrn: "string"
 }
 ```
 
@@ -1326,7 +1315,6 @@ HTTP/1.1 201 Created
 ```json5
 {
   is_print: true,
-  //boolean
   cashier_software_code: "string",
 }
 ```
@@ -1382,11 +1370,9 @@ HTTP/1.1 201 Created
 ```json5
 {
   is_print: true,
-  //boolean
   request_uid: "string",
   currency: "string",
   amount: "string(F)"
-  /* "300.00" */,
 }
 ```
 
@@ -1410,8 +1396,7 @@ HTTP/1.1 201 Created
   document_number: 0,
   issued_at: "string",
   currency: "string",
-  amount: "string(F)"
-  /* "300.00" */,
+  amount: "string(F)",
   unique_code: "string",
   cashier_identificator: "string",
   cashier_login: "string",
@@ -1461,11 +1446,9 @@ HTTP/1.1 201 Created
 ```json5
 {
   is_print: true,
-  //boolean
   request_uid: "string",
   currency: "string",
-  amount: "string(F)"
-  /* "300.00" */,
+  amount: "string(F)",
 }
 ```
 
@@ -1489,8 +1472,7 @@ HTTP/1.1 201 Created
   document_number: 0,
   issued_at: "string",
   currency: "string",
-  amount: "string"
-  /* "300.00" */,
+  amount: "string",
   unique_code: "string(F)",
   cashier_identificator: "string",
   cashier_login: "string",
@@ -1559,38 +1541,26 @@ receipt не валидируется на стороне Терминально
 ```json5
 {
   is_print: true,
-  //boolean
   send_email: "string",
   request_uid: "string",
   currency: "string",
-  deposit_amount: "string(F)"
-  /* "300.00" */,
-  card_amount: "string(F)"
-  /* "300.00" */,
-  cash_amount: "string(F)"
-  /* "300.00" */,
-  another_amount: "string(F)"
-  /* "300.00" */,
+  deposit_amount: "string(F)",
+  card_amount: "string(F)",
+  cash_amount: "string(F)",
+  another_amount: "string(F)",
   positions: [
     {
       name: "string",
       tag: 0,
-      amount_unit: "string(F)"
-      /* "300.00" */,
-      amount: "string(F)"
-      /* "300.00" */,
-      count: "string(F)"
-      /* "300.000" */,
-      change_percent: "string(F)"
-      /* "300.00" */,
-      change_amount: "string(F)"
-      /* "300.00" */,
+      amount_unit: "string(F)",
+      amount: "string(F)",
+      count: "string(F)",
+      change_percent: "string(F)",
+      change_amount: "string(F)",
       tax: {
         tax_code: "string",
-        tax_percent: "string(F)"
-        /* "300.00" */,
-        tax_amount_unit: "string(F)"
-        /* "300.00" */,
+        tax_percent: "string(F)",
+        tax_amount_unit: "string(F)",
       },
       article: "string",
       gtin: "string",
@@ -1606,15 +1576,12 @@ receipt не валидируется на стороне Терминально
     {
       type: "string",
       code: "string",
-      amount: "string(F)"
-      /* "300.00" */,
+      amount: "string(F)",
     },
   ],
   third_part_unp: "string",
-  change_amount: "string(F)"
-  /* "300.00" */,
-  change_percent: "string(F)"
-  /* "300.00" */,
+  change_amount: "string(F)",
+  change_percent: "string(F)",
   bank_card_check: [
     {
       bic: "string",
@@ -1744,36 +1711,24 @@ HTTP/1.1 201 Created
   positions_count: 0,
   request_uid: "string",
   currency: "string",
-  deposit_amount: "string(F)"
-  /* "300.00" */,
-  card_amount: "string(F)"
-  /* "300.00" */,
-  cash_amount: "string(F)"
-  /* "300.00" */,
-  another_amount: "string(F)"
-  /* "300.00" */,
+  deposit_amount: "string(F)",
+  card_amount: "string(F)",
+  cash_amount: "string(F)",
+  another_amount: "string(F)",
   positions: [
     {
       name: "string",
       tag: 0,
-      amount_unit: "string(F)"
-      /* "300.00" */,
-      amount: "string(F)"
-      /* "300.00" */,
-      fee: "string(F)"
-      /* "300.00" */,
-      count: "string(F)"
-      /* "300.000" */,
-      change_percent: "string(F)"
-      /* "300.00" */,
-      change_amount: "string(F)"
-      /* "300.00" */,
+      amount_unit: "string(F)",
+      amount: "string(F)",
+      fee: "string(F)",
+      count: "string(F)",
+      change_percent: "string(F)",
+      change_amount: "string(F)",
       tax: {
         tax_code: "string",
-        tax_percent: "string(F)"
-        /* "300.00" */,
-        tax_amount: "string(F)"
-        /* "300.00" */,
+        tax_percent: "string(F)",
+        tax_amount: "string(F)",
       },
       article: "string",
       gtin: "string",
@@ -1790,29 +1745,20 @@ HTTP/1.1 201 Created
     {
       type: "string",
       code: "string",
-      amount: "string(F)"
-      /* "300.00" */,
+      amount: "string(F)",
     },
   ],
   third_part_unp: "string",
   cashier_identificator: "string",
   cashier_login: "string",
-  amount: "string(F)"
-  /* "300.00" */,
-  total_amount: "string(F)"
-  /* "300.00" */,
-  change_amount: "string(F)"
-  /* "300.00" */,
-  change_percent: "string(F)"
-  /* "300.00" */,
-  change: "string(F)"
-  /* "300.00" */,
-  discount_amount: "string(F)"
-  /* "300.00" */,
-  increase_amount: "string(F)"
-  /* "300.00" */,
-  total_change_amount: "string(F)"
-  /* "300.00" */,
+  amount: "string(F)",
+  total_amount: "string(F)",
+  change_amount: "string(F)",
+  change_percent: "string(F)",
+  change: "string(F)",
+  discount_amount: "string(F)",
+  increase_amount: "string(F)",
+  total_change_amount: "string(F)",
   document_number: 0,
   issued_at: "string",
   unique_code: "string",
@@ -2029,7 +1975,6 @@ bank_card_check запроса refund. Важное уточнение: сумм
 ```json5
 {
   is_print: true,
-  //boolean
   send_email: "string",
   transaction_rrn: "string",
   request_uid: "string",
@@ -2037,12 +1982,9 @@ bank_card_check запроса refund. Важное уточнение: сумм
     {
       name: "string",
       tag: 0,
-      amount_unit: "string(F)"
-      /* "300.00" */,
-      amount: "string(F)"
-      /* "300.00" */,
-      count: "string(F)"
-      /* "300.000" */,
+      amount_unit: "string(F)",
+      amount: "string(F)",
+      count: "string(F)",
       article: "string",
       gtin: "string",
       section_number: 0,
@@ -2054,20 +1996,15 @@ bank_card_check запроса refund. Важное уточнение: сумм
     },
   ],
   currency: "string",
-  amount: "string(F)"
-  /* "300.00" */,
-  card_amount: "string(F)"
-  /* "300.00" */,
-  cash_amount: "string(F)"
-  /* "300.00" */,
-  another_amount: "string(F)"
-  /* "300.00" */,
+  amount: "string(F)",
+  card_amount: "string(F)",
+  cash_amount: "string(F)",
+  another_amount: "string(F)",
   another_amount_types: [
     {
       type: "string",
       code: "string",
-      amount: "string(F)"
-      /* "300.00" */,
+      amount: "string(F)",
     },
   ],
   bank_card_check: [
@@ -2363,7 +2300,6 @@ HTTP/1.1 201 Created
 ```json5
 {
   is_print: true,
-  //boolean
   request_uid: "string",
 }
 ```
@@ -2389,44 +2325,31 @@ HTTP/1.1 201 Created
   cashier_login: "string",
   account_number: 0,
   currency: "string",
-  amount: "string(F)"
-  /* "300.00" */,
-  card_amount: "string(F)"
-  /* "300.00" */,
-  cash_amount: "string(F)"
-  /* "300.00" */,
+  amount: "string(F)",
+  card_amount: "string(F)",
+  cash_amount: "string(F)",
   another_amount_types: [
     {
       type: "string",
       code: "string",
-      amount: "string(F)"
-      /* "300.00" */,
+      amount: "string(F)",
     },
   ],
-  another_amount: "string(F)"
-  /* "300.00" */,
+  another_amount: "string(F)",
   positions: [
     {
       name: "string",
       tag: 0,
-      amount_unit: "string(F)"
-      /* "300.00" */,
-      amount: "string(F)"
-      /* "300.00" */,
-      fee: "string(F)"
-      /* "300.00" */,
-      count: "string(F)"
-      /* "300.000" */,
-      change_percent: "string(F)"
-      /* "300.00" */,
-      change_amount: "string(F)"
-      /* "300.00" */,
+      amount_unit: "string(F)",
+      amount: "string(F)",
+      fee: "string(F)",
+      count: "string(F)",
+      change_percent: "string(F)",
+      change_amount: "string(F)",
       tax: {
         tax_code: "string",
-        tax_percent: "string(F)"
-        /* "300.00" */,
-        tax_amount: "string(F)"
-        /* "300.00" */,
+        tax_percent: "string(F)",
+        tax_amount: "string(F)",
       },
       article: "string",
       gtin: "string",
@@ -2581,7 +2504,6 @@ HTTP/1.1 201 Created
 ```json5
 {
   is_print: true,
-  //boolean
   send_email: "string",
   document_number: 0,
   document_type: "string",
@@ -2627,7 +2549,6 @@ HTTP/1.1 201 Created
 ```json5
 {
   is_print: true,
-  //boolean
 }
 ```
 
@@ -2842,7 +2763,6 @@ HTTP/1.1 200 OK
 ```json5
 {
   is_print: true,
-  //boolean
 }
 ```
 
@@ -3075,7 +2995,6 @@ HTTP/1.1 201 Created
 ```json5
 {
   is_print: true,
-  //boolean
   document_number: 1
 }
 ```
@@ -3451,13 +3370,11 @@ caviar - Икра осетровых и икра лососевых <br>
 antiseptics - Антисептики и дезинфицирующие средства <br>
 bike - Велосипеды и велосипедные рамы <br>
 
-## E-POS
-
 # EPOS <a id="epos"></a>
 
 ## Services <a id="epos/services"></a>
 
-Получение списка услуг и торговых точек по id производителя услуг. Для данного запроса отсутствует параметр is_print
+Получение списка услуг и торговых точек по id производителя услуг. Для данного запроса отсутствует параметр `is_print`
 
 **Метод:** `GET`  
 **URL:** `http://{ip адрес}:{порт}/epos/services/`
@@ -3507,11 +3424,11 @@ HTTP/1.1 200 OK
 | `id`         | `integer` | нет              | идентификатор услуги в системе EPOS |
 | `name`       | `string`  | да               | наименование услуги                 |
 
-#### Объект розничной точки (Retail_outlets)
+#### Объект розничной точки (retail_outlets)
 
 | **Параметр** | **Тип**   | **Обязательный** | **Описание**          |
 |--------------|-----------|------------------|-----------------------|
-| `id`         | `integer` | нет              | Id РТТ в системе EPOS |
+| `id`         | `integer` | нет              | ID РТТ в системе EPOS |
 | `address`    | `string`  | нет              | адрес РТТ             |
 | `name`       | `string`  | нет              | имя РТТ               |
 
@@ -3520,7 +3437,7 @@ HTTP/1.1 200 OK
 ## Create payment link <a id="epos/create-payment-link"></a>
 
 Создание платежной ссылки предназначено для инициализации оплаты в сервисе E-POS. Для данного запроса отсутствует
-параметр is_print
+параметр `is_print`
 
 **Метод:** `POST`  
 **URL:** `http://{ip адрес}:{порт}/epos/createPaymentLink/`
@@ -3539,8 +3456,7 @@ HTTP/1.1 200 OK
 ```json5
 {
   "request_uid": "string",
-  "amount": "string (F7.2)",
-  // "25.00"
+  "amount": "string (F7.2)", // "25.00"
   "service_id": 0,
   "retail_outlet_id": 0
 }
@@ -3548,7 +3464,7 @@ HTTP/1.1 200 OK
 
 | **Параметр**       | **Тип**  | **Обязательный** | **Описание**                                                                            |
 |--------------------|----------|------------------|-----------------------------------------------------------------------------------------|
-| `request_uid`      | `string` | да               | Id запроса АРМ кассира в разрезе кассы.<br>⚠️Примечание: Строка строго в формате UUIDv4 |
+| `request_uid`      | `string` | да               | ID запроса АРМ кассира в разрезе кассы.<br>⚠️Примечание: Строка строго в формате UUIDv4 |
 | `amount`           | `string` | да               | Сумма к оплате                                                                          |
 | `service_id`       | `string` | нет              | Идентификатор услуги в системе E-POS                                                    |
 | `retail_outlet_id` | `string` | нет              | Идентификатор РТТ в системе E-POS                                                       |
@@ -3568,20 +3484,21 @@ HTTP/1.1 201 Created
 
 #### Параметры ответа
 
-| **Параметр**       | **Тип**   | **Обязательный** | **Описание**                                                                                                   |
-|--------------------|-----------|------------------|----------------------------------------------------------------------------------------------------------------|
-| `request_uid`      | `string`  | да               | Id запроса АРМ кассира в разрезе кассы                                                                         |
-| `payment_link`     | `string`  | да               | Платежная ссылка                                                                                               |
-| `personal_account` | `string`  | да               | Лицевой счет оплаты в системе E-POS                                                                            |
-| `status`           | `integer` | нет              | Статус:<br>`0` — Оплата не начата<br><br>`1` — Оплата в процессе<br>`2` — Оплата прошла<br>`3` — Отмена оплаты |
+| **Параметр**       | **Тип**   | **Обязательный** | **Описание**                                                                                               |
+|--------------------|-----------|------------------|------------------------------------------------------------------------------------------------------------|
+| `request_uid`      | `string`  | да               | ID запроса АРМ кассира в разрезе кассы                                                                     |
+| `payment_link`     | `string`  | да               | Платежная ссылка                                                                                           |
+| `personal_account` | `string`  | да               | Лицевой счет оплаты в системе E-POS                                                                        |
+| `status`           | `integer` | нет              | Статус:<br>`0` — Оплата не начата<br>`1` — Оплата в процессе<br>`2` — Оплата прошла<br>`3` — Отмена оплаты |
 
 ---
 
 ## Epos status by uid <a id="epos/info-status-by-uid"></a>
 
-Запрос предназначен для повторного получения платежной ссылки по uuid запроса на создание платежной ссылки. Для данного
+Запрос предназначен для повторного получения платежной ссылки по `request_uid` запроса на создание платежной ссылки. Для
+данного
 запроса отсутствует
-параметр is_print
+параметр `is_print`
 
 **Метод:** `GET`  
 **URL:** `http://{ip адрес}:{порт}/epos/infoStatusByUid?request_uid={request_uid}`
@@ -3601,9 +3518,9 @@ HTTP/1.1 201 Created
 {}
 ```
 
-| **Параметр**                 | **Тип**  | **Обязательный** | **Описание**                                                                                                                  |
-|------------------------------|----------|------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| `request_uid` <br> __query__ | `string` | да               | Id запроса АРМ кассира в разрезе кассы.<br>⚠️Примечание: значение из запроса [Create payment link](#epos/create-payment-link) |
+| **Параметр**               | **Тип**  | **Обязательный** | **Описание**                                                                                                                  |
+|----------------------------|----------|------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| `request_uid` <br> *query* | `string` | да               | ID запроса АРМ кассира в разрезе кассы.<br>⚠️Примечание: значение из запроса [Create payment link](#epos/create-payment-link) |
 
 ### Ответ
 
@@ -3620,20 +3537,19 @@ HTTP/1.1 200 Ok
 
 #### Параметры ответа
 
-| **Параметр**       | **Тип**   | **Обязательный** | **Описание**                                                                                                   |
-|--------------------|-----------|------------------|----------------------------------------------------------------------------------------------------------------|
-| `request_uid`      | `string`  | да               | Id запроса АРМ кассира в разрезе кассы                                                                         |
-| `payment_link`     | `string`  | да               | Платежная ссылка                                                                                               |
-| `personal_account` | `string`  | да               | Лицевой счет оплаты в системе E-POS                                                                            |
-| `status`           | `integer` | нет              | Статус:<br>`0` — Оплата не начата<br><br>`1` — Оплата в процессе<br>`2` — Оплата прошла<br>`3` — Отмена оплаты |
+| **Параметр**       | **Тип**   | **Обязательный** | **Описание**                                                                                               |
+|--------------------|-----------|------------------|------------------------------------------------------------------------------------------------------------|
+| `request_uid`      | `string`  | да               | ID запроса АРМ кассира в разрезе кассы                                                                     |
+| `payment_link`     | `string`  | да               | Платежная ссылка                                                                                           |
+| `personal_account` | `string`  | да               | Лицевой счет оплаты в системе E-POS                                                                        |
+| `status`           | `integer` | нет              | Статус:<br>`0` — Оплата не начата<br>`1` — Оплата в процессе<br>`2` — Оплата прошла<br>`3` — Отмена оплаты |
 
 ---
 
 ## Epos payment info by uid <a id="epos/payment"></a>
 
-Запрос возвращает информацию о платеже E-POS,
-⚠️Примечание. Только после создания (фискализации) платежного документа (чека) с
-указанным `request_uid` в поле `epos_uuid_arm`. Для данного запросаотсутствует параметр is_print
+Запрос возвращает информацию о платеже E-POS. ❗Важно. Только после создания (фискализации) платежного документа (чека) с
+указанным `request_uid` в поле `epos_uuid_arm`. Для данного запроса отсутствует параметр `is_print`
 
 **Метод:** `GET`  
 **URL:** `http://{ip адрес}:{порт}/epos/infoPaymentByUid?={request_uid}`
@@ -3653,9 +3569,9 @@ HTTP/1.1 200 Ok
 {}
 ```
 
-| **Параметр**                 | **Тип**  | **Обязательный** | **Описание**                                                                                                                  |
-|------------------------------|----------|------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| `request_uid` <br> __query__ | `string` | да               | Id запроса АРМ кассира в разрезе кассы.<br>⚠️Примечание: значение из запроса [Create payment link](#epos/create-payment-link) |
+| **Параметр**               | **Тип**  | **Обязательный** | **Описание**                                                                                                                  |
+|----------------------------|----------|------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| `request_uid` <br> *query* | `string` | да               | ID запроса АРМ кассира в разрезе кассы.<br>⚠️Примечание: значение из запроса [Create payment link](#epos/create-payment-link) |
 
 ### Ответ
 
@@ -3678,18 +3594,18 @@ HTTP/1.1 200 Ok
 
 #### Параметры ответа
 
-| **Параметр**          | **Тип**   | **Обязательный** | **Описание**                                                                                                   |
-|-----------------------|-----------|------------------|----------------------------------------------------------------------------------------------------------------|
-| `id`                  | `integer` | да               | идентификатор платежа в системе E-POS                                                                          |
-| `epos_uuid_arm`       | `string`  | да               | Уникальный идентификатор транзакции EPOS АРМ кассира                                                           |
-| `unique_code`         | `string`  | да               | UUID запроса платежной ссылки                                                                                  |
-| `service_name`        | `string`  | да               | Услуга                                                                                                         |
-| `personal_account`    | `string`  | да               | № счёт                                                                                                         |
-| `date`                | `string`  | нет              | Дата и время                                                                                                   |
-| `erip_transaction_id` | `integer` | да               | № операции в ЕРИП                                                                                              |
-| `epos_transaction_id` | `integer` | да               | № операции в EPOS                                                                                              |
-| `amount`              | `string`  | да               | Сумма                                                                                                          |
-| `state`               | `integer` | нет              | Статус:<br>`0` — Оплата не начата<br><br>`1` — Оплата в процессе<br>`2` — Оплата прошла<br>`3` — Отмена оплаты |
+| **Параметр**          | **Тип**   | **Обязательный** | **Описание**                                                                                               |
+|-----------------------|-----------|------------------|------------------------------------------------------------------------------------------------------------|
+| `id`                  | `integer` | да               | идентификатор платежа в системе E-POS                                                                      |
+| `epos_uuid_arm`       | `string`  | да               | Уникальный идентификатор транзакции EPOS АРМ кассира                                                       |
+| `unique_code`         | `string`  | да               | UUID запроса платежной ссылки                                                                              |
+| `service_name`        | `string`  | да               | Наименование услуги                                                                                        |
+| `personal_account`    | `string`  | да               | № счёта                                                                                                    |
+| `date`                | `string`  | нет              | Дата и время                                                                                               |
+| `erip_transaction_id` | `integer` | да               | Номер операции в ЕРИП                                                                                      |
+| `epos_transaction_id` | `integer` | да               | Номер операции в EPOS                                                                                      |
+| `amount`              | `string`  | да               | Сумма оплаты                                                                                               |
+| `state`               | `integer` | нет              | Статус:<br>`0` — Оплата не начата<br>`1` — Оплата в процессе<br>`2` — Оплата прошла<br>`3` — Отмена оплаты |
 
 ---
 
