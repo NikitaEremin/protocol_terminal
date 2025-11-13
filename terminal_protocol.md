@@ -249,7 +249,6 @@ tax_amount_unit – всегда вычисляется на стороне уп
 | Connection   | keep-alive                      |
 | Content-Type | application/json; charset=utf-8 |
 
-Далее в документе заголовки в примерах запроса буду обозначены как <**_headers_**\>.
 
 Для всех **POST** запросов, если в конкретном запросе не указано обратное, в теле запроса может передаваться параметр
 is_print, который отвечает за необходимость вывода документа на печать, если параметр не был отправлен, значение по
@@ -302,14 +301,12 @@ boolean — логический тип данных. Принимает одн�
 **\[GET\]** http://{ip адрес}:(порт)/**ping**
 
 <details><summary><b>Headers</b></summary>
-
 ```json
 {
     "Connection": "keep-alive",
     "Content-Type": "application/json; charset=utf-8"
 }
 ```
-
 </details>
 
 ```json5
@@ -339,7 +336,14 @@ HTTP/1.1 200 OK
 
 **\[PATCH\]** http://{ip адрес}:(порт)/**settings/bankSetting**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {
@@ -381,7 +385,14 @@ HTTP/1.1 201 Created
 
 **\[PATCH\]** http://{ip адрес}:(порт)/**settings/bankSetting**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {}
@@ -423,7 +434,14 @@ HTTP/1.1 200 OK
 
 **\[POST\]** http://{ip адрес}:(порт)/**bank/payment**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {
@@ -509,7 +527,14 @@ HTTP/1.1 201 Created
 
 **\[POST\]** http://{ip адрес}:(порт)/**bank/refund**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {
@@ -597,7 +622,14 @@ HTTP/1.1 201 Created
 
 **\[POST\]** http://{ip адрес}:(порт)/**bank/closeShift**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {}
@@ -629,7 +661,14 @@ HTTP/1.1 201 Created
 
 **\[GET\]** http://{ip адрес}:(порт)/**bank/lastOperations**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {}
@@ -713,7 +752,14 @@ HTTP/1.1 200 OK
 
 **\[DELETE\]** http://{ip адрес}:(порт)/**bank/clearLastOperations**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {}
@@ -743,7 +789,14 @@ HTTP/1.1 204 No Content
 
 **\[POST\]** http://{ip адрес}:(порт)/**printDocument**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {
@@ -777,7 +830,14 @@ HTTP/1.1 201 Created
 
 **\[POST\]** http://{ip адрес}:(порт)/**printBlocks**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {
@@ -811,7 +871,14 @@ HTTP/1.1 201 Created
 
 **\[POST\]** http://{ip адрес}:(порт)/**auth/refreshToken**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {
@@ -837,7 +904,14 @@ HTTP/1.1 204 No Content
 
 **\[GET\]** http://{ip адрес}:(порт)/**infoLastDocument/**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {}
@@ -861,7 +935,14 @@ HTTP/1.1 200 OK
 
 **\[GET\]** http://{ip адрес}:(порт)/**infoUser/**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {}
@@ -970,7 +1051,14 @@ HTTP/1.1 200 OK
 
 **\[GET\]** http://{ip адрес}:(порт)/**infoCheckByUid/?request_uid=&lt;request_uid&gt;**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 Query:
 
@@ -1005,7 +1093,14 @@ HTTP/1.1 200 OK
 
 **\[POST\]** http://{ip адрес}:(порт)/**infoGetMarkType/**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {
@@ -1041,7 +1136,14 @@ HTTP/1.1 201 Created
 
 **\[GET\]** http://{ip адрес}:(порт)/**infoUserSectionList/**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {}
@@ -1076,7 +1178,14 @@ HTTP/1.1 201 Created
 
 **\[POST\]** http://{ip адрес}:(порт)/**shift/**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {
@@ -1122,7 +1231,14 @@ HTTP/1.1 201 Created
 
 **\[POST\]** http://{ip адрес}:(порт)/**deposit**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {
@@ -1189,7 +1305,14 @@ HTTP/1.1 201 Created
 
 **\[POST\]** http://{ip адрес}:(порт)/**withdraw**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {
@@ -1262,7 +1385,14 @@ HTTP/1.1 201 Created
 
 **\[POST\]** http://{ip адрес}:(порт)/**receipt**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {
@@ -1660,7 +1790,14 @@ HTTP/1.1 201 Created
 
 **\[POST\]** http://{ip адрес}:(порт)/**refund**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {
@@ -1965,7 +2102,14 @@ HTTP/1.1 201 Created
 
 **\[POST\]** http://{ip адрес}:(порт)/**cancelLastDocument/**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {
@@ -2160,7 +2304,14 @@ HTTP/1.1 201 Created
 
 **\[POST\]** http://{ip адрес}:(порт)/**copyDocument/**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {
@@ -2196,7 +2347,14 @@ HTTP/1.1 201 Created
 
 **\[POST\]** http://{ip адрес}:(порт)/**xreport/**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {
@@ -2401,7 +2559,14 @@ HTTP/1.1 200 OK
 
 **\[POST\]** http://{ip адрес}:(порт)/**zreport**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {
@@ -2622,7 +2787,14 @@ HTTP/1.1 201 Created
 
 **\[POST\]** http://{ip адрес}:(порт)/**/zreport/controlTape**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {
@@ -2701,7 +2873,14 @@ HTTP/1.1 201 Created
 
 **\[GET\]** http://{ip адрес}:(порт)/**tariffId/**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {}
@@ -2731,7 +2910,14 @@ HTTP/1.1 201 Created
 
 **\[POST\]** http://{ip адрес}:(порт)/**markChecker/markTypes/**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {
@@ -2891,7 +3077,14 @@ bike - Велосипеды и велосипедные рамы <br>
 
 **\[POST\]** http://{ip адрес}:(порт)/**markChecker/gtins/**
 
-<**_headers_**\>
+<details><summary><b>Headers</b></summary>
+```json
+{
+    "Connection": "keep-alive",
+    "Content-Type": "application/json; charset=utf-8"
+}
+```
+</details>
 
 ```json5
 {
